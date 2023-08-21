@@ -185,31 +185,7 @@ div {
     /* Attributes describe: thickness, type, color*/
 }
 
-# HTML CSSResult Skip Results Iframe EDIT ON .flex-container {
-    /* We first create a flex layout context */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 
-    /* Then we define the flow direction 
- and if we allow the items to wrap 
-* Remember this is the same as:
-* flex-direction: row;
-* flex-wrap: wrap;
-*/
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-
-    /* Then we define how is distributed the remaining space */
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
 #grid-container {
     display: -ms-grid;
@@ -222,48 +198,48 @@ div {
 }
 
 #grid-container>*:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -grid-row: 1;
+    -grid-column: 1;
 }
 
 #grid-container>*:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -grid-row: 1;
+    -grid-column: 3;
 }
 
 #grid-container>*:nth-child(3) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
+    -grid-row: 1;
+    -grid-column: 5;
 }
 
 #grid-container>*:nth-child(4) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
+    -grid-row: 3;
+    -grid-column: 1;
 }
 
 #grid-container>*:nth-child(5) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
+    -grid-row: 3;
+    -grid-column: 3;
 }
 
 #grid-container>*:nth-child(6) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
+    -grid-row: 3;
+    -grid-column: 5;
 }
 
 #grid-container>*:nth-child(7) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
+    -grid-row: 5;
+    -grid-column: 1;
 }
 
 #grid-container>*:nth-child(8) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
+    -grid-row: 5;
+    -grid-column: 3;
 }
 
 #grid-container>*:nth-child(9) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
+    -grid-row: 5;
+    -grid-column: 5;
 }
 
 #grid-container .grid__item {
