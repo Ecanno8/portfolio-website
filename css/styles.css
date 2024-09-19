@@ -28,7 +28,6 @@ body {
 /* Header */
 header {
   background-color: var(--purple);
-  color: var(--red);
   padding: 24px;
   border-bottom: 1.5px solid var(--black);
   position: fixed;
@@ -41,7 +40,6 @@ header {
   z-index: 1000;
 }
 
-/* Navigation */
 .main-navigation {
   width: 100%;
 }
@@ -71,35 +69,78 @@ header {
   border-radius: 4px;
 }
 
-/* Main Content */
-main {
-  margin-top: 80px;
-  /* Adjust based on header height */
+/* Projects Section */
+.projects-page {
+  margin-top: 120px;
+  /* Adjust for fixed header */
   text-align: center;
 }
 
-h1 {
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.project-card h2 {
   font-size: 24px;
-  line-height: 1.5;
-  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--purple);
 }
 
-h3 {
-  font-size: 18px;
-  line-height: 1.5;
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
+.project-card a {
+  display: block;
+  margin-top: 10px;
+  color: var(--orange);
+  text-decoration: none;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Call-to-Action Buttons */
+.button {
+  display: inline-block;
+  font-family: inherit;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: var(--orange);
+  color: var(--purple);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.button_primary {
+  background-color: var(--orange);
+  color: var(--purple);
+}
+
+.button_secondary {
+  background-color: var(--light-green);
+  color: var(--white);
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
 }
 
 /* Footer */
@@ -114,156 +155,4 @@ h3 {
 
 .page-footer a {
   margin: 0 10px;
-}
-
-/* Buttons */
-button,
-.button {
-  display: inline-block;
-  font-family: inherit;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
-  background-color: var(--light-green);
-  color: var(--white);
-  cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  opacity: 0.8;
-}
-
-.button_primary {
-  background-color: var(--orange);
-  color: var(--purple);
-}
-
-.button_secondary {
-  background-color: var(--light-green);
-  color: var(--red);
-}
-
-/* Projects Grid */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* Responsive grid layout */
-  gap: 20px;
-  /* Space between items */
-  padding: 20px;
-  margin-top: 40px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.project-card {
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: var(--box-shadow);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s ease-in-out;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-  /* Slight zoom on hover */
-}
-
-.project-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.project-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--purple);
-}
-
-.project-description {
-  font-size: 16px;
-  color: var(--black);
-}
-
-/* Responsive Layout */
-@media screen and (min-width: 1200px) {
-  .projects-container {
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 projects per row on larger screens */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 projects per row on tablets */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-    /* 1 project per row on mobile */
-  }
-}
-
-/* Keyframes */
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }

@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects by Ethan Cannon</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
     <header>
         <nav class="main-navigation">
             <ul class="navigation-list">
                 <li class="navigation-list__item">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Home</a>
+                    <a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a>
                 </li>
                 <li class="navigation-list__item">
                     <a href="work.html" role="menuitem">Work</a>
@@ -32,59 +30,60 @@
         </nav>
     </header>
 
-    <main>
+    <main class="projects-page">
         <h1>Projects</h1>
 
         <section class="projects-container">
-
             <div class="project-card">
                 <h2>Meet App</h2>
                 <p>
                     Objective: The aim of the project was to develop a serverless, progressive web application (PWA)
-                    using React, adhering to the principles of test-driven development (TDD). The application was
-                    designed to leverage the Google Calendar API to fetch upcoming events.
+                    using React, adhering to the principles of test-driven development (TDD). The application leverages
+                    the Google Calendar API to fetch upcoming events.
                 </p>
-                <h3><a href="https://ecanno8.github.io/meet/">Check out the deployed version here!</a></h3>
+                <a href="https://ecanno8.github.io/meet/" class="button button_primary">View Live Project</a>
             </div>
 
             <div class="project-card">
-                <h3>API</h3>
-                <p>Within this project, I was responsible for the frontend. It's written in React.js. Additionally, I've
-                    created the HTML and CSS templates.</p>
-                <a href="https://github.com/Ecanno8/movie_api">See API Code on Github</a>
+                <h2>Movie API</h2>
+                <p>Responsible for the frontend, written in React.js. Additionally, created HTML and CSS templates.</p>
+                <a href="https://github.com/Ecanno8/movie_api" class="button button_primary">See API on GitHub</a>
             </div>
 
             <div class="project-card">
-                <h3>Mobile web app</h3>
-                <p>Node React</p>
-                <a href="https://qmovieflix.netlify.app/login">Check out the deployed site here!</a>
-                <a href="https://github.com/Ecanno8/QflixClient">See Client End code using Node and Js</a>
+                <h2>Qflix Mobile Web App (Node & React)</h2>
+                <p>A mobile-friendly web app built with Node.js and React.</p>
+                <a href="https://qmovieflix.netlify.app/login" class="button button_primary">Check Deployed Site</a>
+                <a href="https://github.com/Ecanno8/QflixClient" class="button button_secondary">View Client Code</a>
             </div>
 
             <div class="project-card">
-                <h3>Mobile web app</h3>
-                <p>Angular client</p>
-                <a href="https://github.com/Ecanno8/qFlixangularClient">See Client End code using Angular</a>
+                <h2>Qflix Mobile Web App (Angular)</h2>
+                <p>Angular version of the mobile web app.</p>
+                <a href="https://github.com/Ecanno8/qFlixangularClient" class="button button_primary">View Client Code
+                    (Angular)</a>
             </div>
 
             <div class="project-card">
-                <h3>Mobile web app</h3>
-                <p>This application, designed for mobile devices using React Native, offers users a convenient platform
-                    for chatting, sharing images, and location information.</p>
-                <a href="https://github.com/Ecanno8/chat-app/">See mobile project using React and Expo on GitHub</a>
+                <h2>Mobile Chat App (React Native)</h2>
+                <p>This React Native app allows users to chat, share images, and share location information.</p>
+                <a href="https://github.com/Ecanno8/chat-app/" class="button button_primary">View on GitHub</a>
             </div>
-
         </section>
     </main>
 
     <footer class="page-footer">
         <div>
             <h4>Find Me @</h4>
-            <a href="https://www.linkedin.com/in/ethan-cannon-8729ba9a/"><img height="40" width="40"
-                    src="img/linkedinpic.svg" alt="linkedin"></a>
-            <a href="https://github.com/Ecanno8"><img height="40" width="40" src="img/githubicon.svg" alt="github"></a>
-            <a href="https://www.facebook.com/ethan.cannon.71/"><img height="40" width="40" src="img/facebookpic.svg"
-                    alt="facebook"></a>
+            <a href="https://www.linkedin.com/in/ethan-cannon-8729ba9a/">
+                <img height="40" width="40" src="img/linkedinpic.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Ecanno8">
+                <img height="40" width="40" src="img/githubicon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/ethan.cannon.71/">
+                <img height="40" width="40" src="img/facebookpic.svg" alt="Facebook">
+            </a>
         </div>
     </footer>
 

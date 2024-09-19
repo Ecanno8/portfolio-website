@@ -2,62 +2,87 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Contact Ethan Cannon</title>
-
 </head>
 
 <body>
-  <nav class="main-navigation">
-    <ul class="navigation-list">
-      <li class="navigation-list__item">
-        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-      </li>
-      <li class="navigation-list__item">
-        <a href="work.html" role="menuitem">Work</a>
-      </li>
-      <li class="navigation-list__item">
-        <a href="about.html" role="menuitem">About</a>
-      </li>
-      <li class="navigation-list__item">
-        <a href="contact.html" role="menuitem">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <img src="../img/137205928/logo.png" height="240" width="240"
-    alt="A text area design that says Cannon Encounters, an experience like no other.">
+  <header>
+    <nav class="main-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-list__item">
+          <a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="work.html" role="menuitem">Work</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="about.html" role="menuitem">About</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="contact.html" role="menuitem">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div>
-    Tel <a href="#">+49 30 4849 2016</a><br>
-    Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
-    <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a>
-  </div>
-  <footer>
-    <div>
-      <h2>Find Me @</h2>
-      <a href="https://www.linkedin.com/in/ethan-cannon-8729ba9a/"><img height="40" width="40" src="img/linkedinpic.svg"
-          alt="linkedin link" /></a>
-      <a href="https://github.com/Ecanno8"><img height="40" width="40" src="img/githubicon.svg" alt="github link" /></a>
-      <a href="https://www.facebook.com/ethan.cannon.71/"><img height="40" width="40" src="img/facebookpic.svg"
-          alt="facebook link" /></a>
-    </div>
-    <div>
+  <main>
+    <section class="contact-header">
+      <img src="../img/137205928/logo.png" height="240" width="240" alt="Cannon Encounters Logo">
+      <p>An experience like no other.</p>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Tel: <a href="tel:+493048492016">+49 30 4849 2016</a></p>
+      <p>Skype: <a href="skype:hello.careerfoundry">hello.careerfoundry</a></p>
+      <p>Email: <a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a></p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send a Message</h2>
       <form method="post" id="contact-form">
-        <label class="standard-label">Email: </label>
-        <input type="email" required>
+        <div class="form-group">
+          <label for="email" class="standard-label">Email:</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="Your email address">
+        </div>
 
-        <label class="standard-label">Telephone: </label>
-        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        <div class="form-group">
+          <label for="telephone" class="standard-label">Telephone:</label>
+          <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="123-456-7890">
+        </div>
 
-        <label class="standard-label">Message: </label>
-        <textarea required maxlength="240"></textarea>
-        <input type="submit" value="Send message">
+        <div class="form-group">
+          <label for="message" class="standard-label">Message:</label>
+          <textarea id="message" name="message" required maxlength="240" aria-required="true"
+            placeholder="Your message here..."></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="button button_primary">
       </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="social-links">
+      <h2>Find Me @</h2>
+      <a href="https://www.linkedin.com/in/ethan-cannon-8729ba9a/">
+        <img height="40" width="40" src="img/linkedinpic.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Ecanno8">
+        <img height="40" width="40" src="img/githubicon.svg" alt="GitHub">
+      </a>
+      <a href="https://www.facebook.com/ethan.cannon.71/">
+        <img height="40" width="40" src="img/facebookpic.svg" alt="Facebook">
+      </a>
     </div>
   </footer>
+
   <script src="js/tota11y.min.js"></script>
 </body>
 
