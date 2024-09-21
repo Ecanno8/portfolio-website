@@ -55,7 +55,7 @@ header {
 }
 
 .navigation-list__item {
-  margin: 0 10px;
+  margin: 0 24px;
 }
 
 .navigation-list__item a {
@@ -212,7 +212,7 @@ header {
 }
 
 .button_secondary {
-  background-color: var(--light-green);
+  background-color: var(--purple);
   color: var(--white);
 }
 
