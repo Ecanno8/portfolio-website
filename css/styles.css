@@ -60,7 +60,7 @@ header {
 
 .navigation-list__item a {
   padding: 10px;
-  color: var(--blue);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -172,7 +172,6 @@ header {
 .project-card a {
   display: block;
   margin-top: 10px;
-  color: var(--orange);
   text-decoration: none;
 }
 
