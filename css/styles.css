@@ -155,6 +155,7 @@ header {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .project-card h2 {
@@ -177,6 +178,19 @@ header {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+.project-image {
+  width: 100%;
+  /* makes the image responsive */
+  max-width: 200px;
+  /* set maximum width */
+  height: auto;
+  /* maintains aspect ratio */
+  border-radius: 10px;
+  /* optional: adds rounded corners */
+  margin-bottom: 16px;
+  /* space between image and text */
 }
 
 /* Call-to-Action Buttons */
